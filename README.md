@@ -2,6 +2,8 @@
 
 This is a web api client for retrieving data from CNX textbooks. The api has been designed to be intuitive and easy to use.
 
+> Note: This library is under heavy development. The api my undergo dramatic changes.
+
 ## Install
 
 1. Clone the repository to your local computer. 
@@ -13,13 +15,12 @@ This is a web api client for retrieving data from CNX textbooks. The api has bee
 ```python
 import cnx
 
-book = cnx.book('Sociology')
+book = cnx.book('Introduction to Sociology')
 book.version
 
 >> 6.20
 
 chapter = book.chapter('What is Culture?')
-
 chapter.text()
 
 >> <html xmlns="http://www.w3.org/1999/xhtml">

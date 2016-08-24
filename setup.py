@@ -27,9 +27,9 @@ setup(
     version='0.0.1',
     license='BSD',
     description='A   web api client for Openstax CNX ',
-    long_description='%s\n%s' % (
-        re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
-        re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
+    long_description='%s\n' % (
+        re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.md')),
+        # re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
     ),
     author='Mike Arbelaez',
     author_email='mike.arbelaez@rice.edu',
